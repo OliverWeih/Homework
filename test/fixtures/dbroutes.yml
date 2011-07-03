@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  start: MyString
+  ziel: MyString
+  strecke: 1
+
+two:
+  start: MyString
+  ziel: MyString
+  strecke: 1

@@ -1,0 +1,29 @@
+<%= form_for(@dbroute) do |f| %>
+  <% if @dbroute.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dbroute.errors.count, "error") %> prohibited this dbroute from being saved:</h2>
+
+      <ul>
+      <% @dbroute.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :start %><br />
+    <%= f.text_field :start %>
+  </div>
+  <div class="field">
+    <%= f.label :ziel %><br />
+    <%= f.text_field :ziel %>
+  </div>
+  <div class="field">
+    <%= f.label :strecke %><br />
+    <%= f.text_field :strecke %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

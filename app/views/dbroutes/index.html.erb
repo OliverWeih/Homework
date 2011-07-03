@@ -1,0 +1,27 @@
+<h1>Listing dbroutes</h1>
+
+<table>
+  <tr>
+    <th>Start</th>
+    <th>Ziel</th>
+    <th>Strecke</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dbroutes.each do |dbroute| %>
+  <tr>
+    <td><%= dbroute.start %></td>
+    <td><%= dbroute.ziel %></td>
+    <td><%= dbroute.strecke %></td>
+    <td><%= link_to 'Show', dbroute %></td>
+    <td><%= link_to 'Edit', edit_dbroute_path(dbroute) %></td>
+    <td><%= link_to 'Destroy', dbroute, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dbroute', new_dbroute_path %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Start:</b>
+  <%= @dbroute.start %>
+</p>
+
+<p>
+  <b>Ziel:</b>
+  <%= @dbroute.ziel %>
+</p>
+
+<p>
+  <b>Strecke:</b>
+  <%= @dbroute.strecke %>
+</p>
+
+
+<%= link_to 'Edit', edit_dbroute_path(@dbroute) %> |
+<%= link_to 'Back', dbroutes_path %>
